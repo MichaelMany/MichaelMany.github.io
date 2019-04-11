@@ -174,12 +174,19 @@ if (stringOne.length > stringTwo.length) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    if (stringOne.length < stringTwo.length) {
-        return stringOne
-    } else if (stringOne.length > stringTwo.length) {
-        return stringTwo 
+    var fff = [stringOne, stringTwo];
+    fff.sort();
+    
+    if (stringOne === stringTwo){
+        return 0;
     }
-    //yyyyyeeeeeettttt
+    else if(stringOne === fff[0]){
+        return 1;
+    }
+    else{
+        return -1;
+    }
+  
     // YOUR CODE ABOVE HERE //
 }
 
@@ -193,16 +200,24 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    if (stringOne.length > stringTwo.length) {
-        return stringTwo
-    } else if (stringOne.length < stringTwo.length) {
-        return stringOne
+   var fff = [stringOne, stringTwo];
+    fff.sort();
+    
+    if (stringOne === stringTwo){
+        return 0;
+    }
+    else if(stringOne === fff[0]){
+        return -1;
+    }
+    else{
+        return 1;
     }
 
 
 
     // YOUR CODE ABOVE HERE //
 }
+
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
